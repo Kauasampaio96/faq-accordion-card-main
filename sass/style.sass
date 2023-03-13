@@ -1,0 +1,82 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: 'Kumbh Sans', sans-serif
+
+body
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+  background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%)) 
+
+main
+  max-width: 1200px
+  width: 85%
+
+.attribution
+  text-align: center
+  margin-top: 50px
+  color: white
+
+.flex-box
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background-color: white
+  border-radius: 20px 
+  width: 1000px
+  padding: 70px
+
+  &-1
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 40%
+    position: relative
+    left: -150px
+    position: relative
+
+    .img1
+      position: relative
+      right: -130px
+      bottom: -60px
+
+  &-2
+    width: 50%
+
+    h1
+      margin-bottom: 24px
+      font-size: 2.250rem
+      color: hsl(238, 29%, 16%)
+
+    .accordion-single
+      border-bottom: 1px solid #bbb
+      padding: 20px 0 15px
+      width: 90%
+
+      .single-title
+        color: hsl(238, 29%, 16%)
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-size: 1.125rem
+        transition: .5s
+        cursor: pointer
+
+        &:hover
+          color: hsl(14, 88%, 65%)
+
+        span
+          i
+            color: hsl(14, 88%, 65%)
+
+      .single-content
+        font-size: 0.9rem
+        margin: 15px 0 0 0 
+        color: hsl(240, 6%, 50%)
+        display: none
+        transition: .3s
+        
+

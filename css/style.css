@@ -12,6 +12,12 @@ body {
   height: 100vh;
   background: linear-gradient(180deg, hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
 }
+@media (max-width: 1100px) {
+  body {
+    height: 100%;
+    padding: 200px 15px 100px;
+  }
+}
 
 main {
   max-width: 1200px;
@@ -31,7 +37,17 @@ main {
   background-color: white;
   border-radius: 20px;
   width: 1000px;
-  padding: 70px;
+  padding: 150px 30px;
+}
+@media (max-width: 1100px) {
+  .flex-box {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 150px 15px 50px;
+  }
 }
 .flex-box-1 {
   display: flex;
@@ -42,23 +58,62 @@ main {
   left: -150px;
   position: relative;
 }
+@media (max-width: 1100px) {
+  .flex-box-1 {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: -60px;
+  }
+}
 .flex-box-1 .img1 {
   position: relative;
   right: -130px;
   bottom: -60px;
 }
+@media (max-width: 1100px) {
+  .flex-box-1 .img1 {
+    width: 120px;
+    bottom: -45px;
+    right: -80px;
+  }
+}
+@media (max-width: 1100px) {
+  .flex-box-1 .img2 {
+    width: 300px;
+  }
+}
 .flex-box-2 {
   width: 50%;
+  transition: 0.2s ease;
+}
+@media (max-width: 1100px) {
+  .flex-box-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .flex-box-2 h1 {
   margin-bottom: 24px;
   font-size: 2.25rem;
   color: hsl(238deg, 29%, 16%);
 }
+@media (max-width: 1100px) {
+  .flex-box-2 h1 {
+    margin-top: 0px;
+  }
+}
 .flex-box-2 .accordion-single {
   border-bottom: 1px solid #bbb;
   padding: 20px 0 15px;
   width: 90%;
+}
+@media (max-width: 1100px) {
+  .flex-box-2 .accordion-single {
+    margin: 0 auto;
+  }
 }
 .flex-box-2 .accordion-single .single-title {
   color: hsl(238deg, 29%, 16%);
@@ -72,15 +127,14 @@ main {
 .flex-box-2 .accordion-single .single-title:hover {
   color: hsl(14deg, 88%, 65%);
 }
-.flex-box-2 .accordion-single .single-title span i {
-  color: hsl(14deg, 88%, 65%);
+.flex-box-2 .accordion-single .single-title span .arrow {
+  width: 16px;
 }
 .flex-box-2 .accordion-single .single-content {
   font-size: 0.9rem;
   margin: 15px 0 0 0;
   color: hsl(240deg, 6%, 50%);
   display: none;
-  transition: 0.3s;
 }
 
 /*# sourceMappingURL=style.css.map */

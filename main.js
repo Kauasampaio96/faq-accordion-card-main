@@ -14,7 +14,7 @@ for (let i = 0; i < accordion.length; i++) {
 function openItem(i){
   arrow[i].style.transform = 'rotateX(180deg)'
   title[i].style.fontWeight = '700'
-  accordionContent[i].style.display = 'block'
+  accordionContent[i].classList.add('hide')
 }
 
 
@@ -22,6 +22,6 @@ function closeAll(){
   for (let i = 0; i < accordion.length; i++){
     arrow[i].style.transform = 'rotateX(0deg)'
     title[i].style.fontWeight = '500'
-    accordionContent[i].style.display = 'none'
+    accordionContent[i].classList.remove('hide')
   }
 }
